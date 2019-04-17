@@ -1,7 +1,7 @@
 import {NgModule} from '@angular/core';
 import {ExampleComponent} from './example/example.component';
-import {SharedModule} from '../shared/shared.module';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {SharedModule} from '../shared/shared.module';
 
 @NgModule({
   declarations: [ExampleComponent],

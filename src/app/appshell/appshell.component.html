@@ -1,2 +1,45 @@
 <router-outlet></router-outlet>
 
+<div class="topnav" style="z-index: -1;">
+  <a class="active" href="#home">Terang</a>
+  <a href="#news">Join</a>
+  <a href="#contact">Order</a>
+  <a href="#about">Enquiry</a>
+  <div ngbDropdown class="d-inline-block">
+    <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Courses</button>
+    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+      <button ngbDropdownItem>1 Year Course</button>
+      <button ngbDropdownItem>2 Year Course</button>
+      <button ngbDropdownItem>3 Year Course</button>
+    </div>
+  </div>
+</div>
+
+
+
+
+<ngb-carousel *ngIf="images">
+  <ng-template ngbSlide>
+    <img [src]="images[0]" alt="Random first slide">
+    <div class="carousel-caption">
+      <h3><b>First slide</b></h3>
+      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <img [src]="images[1]" alt="Random second slide">
+    <div class="carousel-caption">
+      <h3>Second slide label</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <img [src]="images[2]" alt="Random third slide">
+    <div class="carousel-caption">
+      <h3>Third slide label</h3>
+      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    </div>
+  </ng-template>
+</ngb-carousel>
+
+
