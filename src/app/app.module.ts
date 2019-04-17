@@ -18,7 +18,7 @@ import {DashboardModule} from './dashboard/dashboard.module';
     NgbModule,
     SharedModule,
     DashboardModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
